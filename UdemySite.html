@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+</head>
+<body>
+    <a href="index.html">Link to my Index</a>
+    <!-- Body contains the actual elements you see on the page. Forms, headers, text, ect. -->
+    <h1>Hello World</h1>
+    <h2>Hey World </h2>
+    <h3>Hi World </h3>
+    <h4>Howdy World</h4>
+    <h5>Wassup World</h5>
+    <h6>G'day World</h6>
+        <!-- Different tags do different things --> 
+        <!-- EX: Tags h1 through h6 form headers of different sizes, h1 being the biggest and h6 being the smallest  -->
+    Hola Mundo
+
+    مرحبا بالعالم
+
+    Привет мир
+        <!-- Spaces do not show up on the page, they get condensed into one line unless you use a paragraph tag to seperate them -->
+    <p>Hola Mundo</p>
+    <p>مرحبا بالعالم</p>
+    <p>Привет мир</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iste, corporis, nisi eos fuga autem rerum eveniet corrupti beatae deserunt doloribus unde sapiente quam mollitia reprehenderit officiis dolor dicta soluta!</p>
+        <!-- Lorem Ipsum text is just filler text for text testing-->
+
+    <p> Witaj świecie, ale <strong>silny</strong> i <em>odkreślony</em> </p>
+        <!-- the tags <strong> and <em> can bold and italicize text-->
+
+    <ol>
+        <li>Hello World</li>
+        <li>Hola Mundo</li>
+        <li>مرحبا بالعالم</li>
+        <li>Привет мир</li>
+    </ol>
+    <ul>
+        <li>Hello World</li>
+        <li>Hola Mundo</li>
+        <li>مرحبا بالعالم</li>
+        <li>Привет мир</li>
+    </ul>
+        <!-- tag <ol> creates an ordered list, tag <ul> creates an unordered list (Bullet points)-->
+    <ol>
+        <li>Hello World</li>
+        <ul>
+            <li>Hola Mundo</li>
+            <ul> 
+                <li>مرحبا بالعالم</li>
+            </ul>
+        </ul>
+        <li>Привет мир</li>
+    </ol>
+        <!-- Nested list, creates an unordered list inside of an ordered list, or vise versa if you reverse the code. There isn't a limit to how far you can nest-->
+    <div> 
+        <p>Γειά σου Κόσμε</p>
+        <p>Selam Dünya</p>
+    </div>
+    <!-- Devides up parts of your code into sections that can be changed with CSS code (Haven't gotten into that yet)-->
+    <p>Ciao <span>mondo</span> </p>
+    <!-- <span> only targets a small portion of a piece of code, <div> is meant for larger pieces of code-->
+    
+    <img src="https://images.unsplash.com/photo-1600804340584-c7db2eacf0bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" 
+        alt="">
+    <!-- <img> tag is self closing, doesn't have </img> to close-->
+    <!-- Use src="" (For the image URL on an online image) and alt="" inside each <img> tag-->
+    <img src="Puppy_pic.jpeg" alt="">
+    <!-- Drag Files into EthanRhorer Folder in Capstone Folder to bring them into visual studio code-->
+    <br>
+    <br>
+    <img src="missing.jpeg" alt="Uh Oh! No Image">
+    <br>
+    <br>
+    <!-- Alt is to show something in the website if something happens with the src tag-->
+    <img src="flask_logo.png" alt="Shoot">
+    <!-- As long as the src tag words, you won't see the alt text"-->
+    <p></p>
+    <a href="http://www.brotofantasy.com">My Link (Broto Fantasy)</a>
+    <!-- Creates hyperlink, href is used to link to another website -->
+    <p></p>
+    <a href="Assesment1.html">Link to Assesment Website</a>
+    <!-- You can link to another webpage on your project by using the file name in the href quotes-->
+    
+    <form> 
+        <h1>Log In</h1>
+        <h2>Please Enter Your Username & Password</h2>
+
+        <input type="email" name="" value="">
+        <input type="password" name="" value="">
+        <input type="submit" name="" value="Enter">
+        <!-- inputs have preset types telling them what to do, so just autofill from the coding site to get the type you need-->
+    </form>
+    <br>
+    <br>
+    <br>
+    <form action="http://www.google.com" method='GET'>
+        <label for="emailtag">EMAIL:</label>
+        <input id="emailtag" type="email" name="useremail" placeholder="example@gmail.com">
+        <!-- Always connect the for="" and the id="" tags to have the same text-->
+        <br>
+        <!--<br> gives a one line break-->
+        <label for="passtag">PASSWORD:</label>
+        <input id="passtag"type="password" name="password" placeholder="password">
+        <!-- Placeholer="" allows for text to show up that will disappear when people start typing-->
+        <input type="submit" name="" value="Submit">
+    </form>
+    <br>
+    <br>
+    <br>
+    <form method="get">
+        
+        <h3>Do you like sports?</h3>
+        <label for="yes">Yes:</label>
+        <input type="radio" id="yes" name="sports_choice" value="yes">
+        <br>
+        <label for="no">No:</label>
+        <input type="radio" id="no" name="sports_choice" value="no">
+        <!-- type "radio" allows for either/or options when selecting-->
+        <!-- using the label allows for easy use of descriptions for options-->
+        <br>
+        <p>How much do you like sports (1-5)</p>
+        <select name="SportScore">
+            <option value="Most">5</option>
+            <option value="Lots">4</option>
+            <option value="Some">3</option>
+            <option value="Little">2</option>
+            <option value="None">1</option>
+        </select>
+        <br>
+        <p>Any Other Comments?</p>
+        <textarea name="name" rows="4" cols="40"></textarea>
+        <br>
+        <input type="submit" name="" value="Submit Feedback">
+
+
+    </form>
+</body>
+</html>
