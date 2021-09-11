@@ -1,0 +1,14 @@
+.firstDiv{
+    background-color: lightgray;
+    border: 4px solid darkred;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+#uniqueP{
+    color: darkviolet;
+}
+#uniqueH1{
+    background-color: lightpink;
+}
