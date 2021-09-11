@@ -11,14 +11,75 @@
 </head>
   <body>
 
-  <!-- COPY AND PASTE YOUR NAVBAR FROM THE OTHER PAGE HERE AS WELL! -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item nav-link">
+              <a class="nav-link active" href="Bootstrap_Project_Signup.html">Project Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Bootstrap_Project_Main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
+    <form> 
+      <h1>Log In</h1>
+      <h2>Please Enter Your Username & Password</h2>
 
+      <input type="email" name="" value="">
+      <input type="password" name="" value="">
+      <input type="submit" name="" value="Enter">
+  </form>
 
-  <!-- CREATE YOUR FORM HERE INSIDE OF A JUMBOTRON AND CONTAINER -->
-
-
-    </div>
+  <h3>Do you like sports?</h3>
+        <label for="yes">Yes:</label>
+        <input type="radio" id="yes" name="sports_choice" value="yes">
+        <br>
+        <label for="no">No:</label>
+        <input type="radio" id="no" name="sports_choice" value="no">
+        <br>
+        <p>How much do you like sports (1-5)</p>
+        <select name="SportScore">
+            <option value="Most">5</option>
+            <option value="Lots">4</option>
+            <option value="Some">3</option>
+            <option value="Little">2</option>
+            <option value="None">1</option>
+        </select>
+        <br>
+        <p>Any Other Comments?</p>
+        <textarea name="name" rows="4" cols="40"></textarea>
+        <br>
+        <input type="submit" name="" value="Submit Feedback">
 
   </body>
 </html>
