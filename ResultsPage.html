@@ -17,6 +17,8 @@ page that contains all the code you need for a new page.-->
   <!--Whole page container div-->
   <div class="container">
 
+    <div id="results"></div>
+
     <div class="row border">
         <div class="col m-1 border">
         <h1 class="text-center text-success">RESULTS PAGE</h1>
@@ -26,6 +28,7 @@ page that contains all the code you need for a new page.-->
         </div>
     </div>    
 
+    <div class="border m-2">
     <form>
         <p>Choose your city</p>
         <select name="CityOfResidence">
@@ -39,12 +42,13 @@ page that contains all the code you need for a new page.-->
     <form class="border m-2">
         <form>Your results are Progressive from San Fransico!</form>
         <form>You might like these politicans in your area!</form>
-        <form class="">Councilmember Hillary Ronan</form>
-        <form class="">Councilmemeber Matt Haney</form>
-        <form class="">District Attorney Chesa Boudine</form>
+        <form>Councilmember Hillary Ronan</form>
+        <form>Councilmemeber Matt Haney</form>
+        <form>District Attorney Chesa Boudine</form>
     </form>
+    </div>
 
-    <div class ="row border">
+    <div class ="row m-2 border">
         <form class="col border">
             <a class="btn btn-primary" href="InteractivePage.html" role="button">Interactive Page</a>
         </form>
@@ -59,5 +63,37 @@ page that contains all the code you need for a new page.-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
+
+    <script type="text/javascript">
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const Q1 = urlParams.get('Q1_choice');
+        const Q2 = urlParams.get('Q2_choice');
+        const Q3 = urlParams.get('Q3_choice');
+        const Q4 = urlParams.get('Q4_choice');
+        const Q5 = urlParams.get('Q5_choice');
+        var totalProg = 0
+        if (Q1 == "Prog") {
+            totalProg = totalProg + 20;
+        }
+        if (Q2 == "Prog") {
+            totalProg = totalProg + 20;
+        }
+        if (Q3 == "Prog") {
+            totalProg = totalProg + 20;
+        }
+        if (Q4 == "Prog") {
+            totalProg = totalProg + 20;
+        }
+        if (Q5 == "Prog") {
+            totalProg = totalProg + 20;
+        }
+    
+        jQuery(document).ready(function() {
+          $("#results").html("<h1>You are "+totalProg+"% Progressive</h1>"); 
+        });
+    
+      </script>
+      
 </body>
 </html>
